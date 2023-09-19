@@ -14,7 +14,7 @@ initContainers:
   gitSync:
     enabled: true
     repo: "https://github.com/rabiulislamanik/egov-mdms-data"
-    branch: "master"
+    branch: "quickstart"
 
 # Container Configs
 image:
