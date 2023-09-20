@@ -3,7 +3,7 @@ global:
    
 cluster-configs:
     namespaces:
-      create: true #set this flag true for 1st time deployment, will create the respective namespaces.
+      create: false #set this flag true for 1st time deployment, will create the respective namespaces.
       values: [ backbone, cert-manager, egov, kafka-cluster, monitoring, playground, zookeeper-cluster ]
     root-ingress:
       cert-issuer: letsencrypt-prod
