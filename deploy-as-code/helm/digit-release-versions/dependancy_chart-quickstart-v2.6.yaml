@@ -41,4 +41,13 @@ modules:
         - "frontend"
       services:
         - egovio/pgr-services-db:pgr-quickstart-86837e0a85-35
- 
+
+    - name: m_TradeLicense
+      dependencies:
+        - "business"
+        - "frontend"
+      services:
+        - egovio/billing-service:v1.4.0-c652c35-7
+        - egovio/tl-services:v1.1.9-a7462eff5a-7
+        - egovio/tl-calculator:v1.1.6-3ad63f2273-4
+        - egovio/egov-apportion-service:v1.1.5-44558a0602-1
