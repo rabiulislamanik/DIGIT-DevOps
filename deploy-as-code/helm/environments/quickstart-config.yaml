@@ -121,6 +121,8 @@ egov-persister:
     gitSync:
       repo: "https://github.com/rabiulislamanik/configs"
       branch: "quickstart"
+  memory_limits: "2000Mi"
+  heap: "-Xmx1500m -Xms1500m"
 
 zuul:
   replicas: 1
