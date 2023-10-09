@@ -27,6 +27,7 @@ modules:
         - egovio/egov-location:v1.1.3-2ee9ec37-1
         - zuul:v1.3.0-667cb3d3-8  
         - egovio/egov-user-event:v1.1.3-a8da9ece-3
+        - egovio/egov-url-shortening:v1.1.2-010cd85ad6-3
 
     - name: business
       dependencies:
@@ -41,4 +42,14 @@ modules:
         - "frontend"
       services:
         - egovio/pgr-services-db:pgr-quickstart-86837e0a85-35
- 
+
+
+    - name: m_TradeLicense
+      dependencies:
+        - "business"
+        - "frontend"
+      services:
+        - egovio/billing-service:v1.4.0-c652c35-7
+        - egovio/egov-apportion-service:v1.1.5-44558a0602-1
+        - egovio/tl-calculator:v1.1.6-3ad63f2273-4
+        - egovio/tl-services:v1.1.5-abbb235975-5
